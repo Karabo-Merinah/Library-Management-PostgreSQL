@@ -211,6 +211,21 @@ SET  borrowed_books=borrowed_books || ARRAY[1]
 WHERE id=1
 
 
+### Delete Operations 
+
+## Delete a book by title
+
+DELETE from books
+
+WHERE title ='1984'
+
+## Delete an author by ID 
+
+DELETE from authors 
+
+WHERE id=1
+
+
 
 
 
