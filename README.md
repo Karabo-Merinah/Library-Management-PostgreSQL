@@ -126,6 +126,65 @@ INSERT INTO patrons (id, name, email, borrowed_books) VALUES
 (10, 'Jack Anderson', 'jack@example.com', ARRAY[7, 8]);
 
 
+### Read Operations -Queries
+
+## Getting all books
+
+![Reading all books](./read-all-books.png)
+
+## Command:
+
+SELECT * FROM books
+
+ORDER BY title ASC
+
+## Get a book by title 
+
+![Getting book by title](./get-book-by-title.png)
+
+## Command:
+
+SELECT * from books
+
+WHERE title='Brave New World'
+
+ORDER BY id ASC
+
+## GET books by specific author 
+
+![Get book by specific author](./get-book-by-author.png)
+
+## Command 
+
+SELECT a.id,a.title,a.author_id,a.genres
+
+FROM books a ,authors b
+
+WHERE a.author_id=b.id
+
+AND a.author_id=2
+
+ORDER BY a.title
+
+## GET all available books
+
+![Get all available books](.get-all-available-books.png)
+
+## Command:
+
+SELECT * FROM books
+
+WHERE available=true
+
+ORDER BY title ASC
+
+
+
+
+ 
+
+
+
 
 
 
