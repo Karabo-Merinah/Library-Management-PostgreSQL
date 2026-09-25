@@ -1,9 +1,38 @@
 ### Library Management System 
 
--The system manages books, authors, and patrons. Users can add, view, update, and delete records using PostgreSQL.
+-The system manages books, authors, and patrons. 
 
+Users can add, view, update, and delete records using PostgreSQL.
 
-### Project Setup
+### Core Features
+
+- Add a book
+
+- View all books
+
+- View a single book by title or ID
+
+- View books by a specific author
+
+- Update book availability (borrow/return)
+
+- Update patron borrowed books
+
+- Delete a book
+
+- Delete an author
+
+- Run advanced queries (filtering, searching, bulk updates)
+
+## Tech Stack
+
+-Database:PostgreSQL
+
+-Tools:pgAdmin,psql
+
+-Language:SQL
+
+### PROJECT SETUP
 
 ## Creating database 
 
@@ -173,7 +202,7 @@ ORDER BY a.title
 
 ## GET all available books
 
-![Get all available books](.get-all-available-books.png)
+![Get all available books](./get-all-available-books.png)
 
 ## Command:
 
@@ -306,17 +335,17 @@ WHERE published_year=1869
 
 ### Running Queries in pgAdmin
 
-## -Open pgAdmin and connect to your server with the correct password
+-Open pgAdmin and connect to your server with the correct password
 
-## -Expand your database 
+ -Expand your database 
 
-## -Right click the database and select Query tool 
+ -Right click the database and select Query tool 
 
-## -Write  SQL commands 
+ -Write  SQL commands 
 
-## -Click the run button (triangle shape button)
+ -Click the run button (triangle shape button)
 
-## -Results will appear in the Data output below 
+-Results will appear in the Data output below 
 
 
 ### Running Queries in psql
