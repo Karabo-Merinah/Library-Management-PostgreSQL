@@ -178,6 +178,41 @@ WHERE available=true
 
 ORDER BY title ASC
 
+### Update Operations 
+
+## Mark a book as borrowed 
+
+## Command :
+
+UPDATE books
+
+SET available=false
+
+WHERE id=7
+
+## Add genre to an existing book 
+
+## Command :
+
+UPDATE books 
+
+SET genres=genres || ARRAY['Friction']
+
+WHERE id=1
+
+## Add a borrowed book to patrons 
+
+## Command :
+
+UPDATE patrons
+
+SET  borrowed_books=borrowed_books || ARRAY[1]
+
+WHERE id=1
+
+
+
+
 
 
 
