@@ -1,3 +1,8 @@
+### Library Management System 
+
+-The system manages books, authors, and patrons. Users can add, view, update, and delete records using PostgreSQL.
+
+
 ### Project Setup
 
 ## Creating database 
@@ -299,26 +304,41 @@ SET published_year =published_year+1
 WHERE published_year=1869
 
 
+### Running Queries in pgAdmin
+
+## -Open pgAdmin and connect to your server with the correct password
+
+## -Expand your database 
+
+## -Right click the database and select Query tool 
+
+## -Write  SQL commands 
+
+## -Click the run button (triangle shape button)
+
+## -Results will appear in the Data output below 
 
 
+### Running Queries in psql
 
+## Open powershell
 
+## Navigate to the PostgreSQL bin folder
 
+e.g cd `C:\Program Files\PostgreSQL\18\bin`
 
+## Connect to Postgres:
 
+`.\psql -U postgres`
 
+## Switch into your database
 
+`\c LibraryDB`
 
+## Type your SQL commands directly 
 
+e.g 
 
- 
-
-
-
-
-
-
-
-
+SELECT * FROM authors;
 
 
