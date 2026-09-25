@@ -215,15 +215,95 @@ WHERE id=1
 
 ## Delete a book by title
 
+## Command:
+
 DELETE from books
 
 WHERE title ='1984'
 
 ## Delete an author by ID 
 
+## Command:
+
 DELETE from authors 
 
 WHERE id=1
+
+### Advanced Queries 
+
+## Finding books published after 1950 
+
+![Books published after 1950](./books-published-after-1950.png)
+
+## Command:
+
+SELECT * from books
+
+WHERE published_year >1950
+
+## Finding all Americans authors
+
+![Finding american authors](./american-authors.png)
+
+## Command:
+
+SELECT * from authors
+
+WHERE nationality ='American'
+
+ORDER BY name ASC
+
+
+## Setting all books as available
+
+## Command:
+
+UPDATE books 
+
+SET available=true
+
+## Finding all books that are available and published after 1950
+
+
+![Available books after 1950](./available-books-after-1950.png)
+
+
+## Command:
+
+SELECT * FROM books
+
+WHERE available=true
+
+AND published_year >1950
+
+
+## Finding authors whose names contain "George"
+
+## Command:
+
+SELECT * FROM authors
+
+WHERE name LIKE '%George%'
+
+ORDER BY name ASC
+
+
+## Incrementing the published year `1869` by 1 
+
+## Command
+
+UPDATE books
+
+SET published_year =published_year+1
+
+WHERE published_year=1869
+
+
+
+
+
+
+
 
 
 
